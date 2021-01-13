@@ -32,7 +32,7 @@ public class AddStock extends JFrame {
 		addStockPanel = new JPanel();
 		addStockPanel.setLayout(null);
 		
-		txtCiderStock = new JTextField("ªÁ¿Ã¥Ÿ");
+		txtCiderStock = new JTextField("ÏÇ¨Ïù¥Îã§");
 		txtCiderStock.setBounds(10, 10, 100, 20);
 		txtCiderStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -41,7 +41,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		txtCokeStock = new JTextField("ƒ›∂Û");
+		txtCokeStock = new JTextField("ÏΩúÎùº");
 		txtCokeStock.setBounds(10, 30, 100, 20);
 		txtCokeStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -50,7 +50,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		txtFantaStock = new JTextField("»Ø≈∏");
+		txtFantaStock = new JTextField("ÌôòÌÉÄ");
 		txtFantaStock.setBounds(10, 50, 100, 20);
 		txtFantaStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -59,7 +59,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		txtPocariSweatStock = new JTextField("∆˜ƒ´∏ÆΩ∫ø˛∆Æ");
+		txtPocariSweatStock = new JTextField("Ìè¨Ïπ¥Î¶¨Ïä§Ïõ®Ìä∏");
 		txtPocariSweatStock.setBounds(10, 70, 100, 20);
 		txtPocariSweatStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -68,7 +68,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		btnAddCiderStock = new JButton("√ﬂ∞°");
+		btnAddCiderStock = new JButton("Ï∂îÍ∞Ä");
 		btnAddCiderStock.setBounds(110, 10, 100, 20);
 		btnAddCiderStock.addActionListener(new ActionListener() {
 			@Override
@@ -78,7 +78,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		btnAddCokeStock = new JButton("√ﬂ∞°");
+		btnAddCokeStock = new JButton("Ï∂îÍ∞Ä");
 		btnAddCokeStock.setBounds(110, 30, 100, 20);
 		btnAddCokeStock.addActionListener(new ActionListener() {
 			@Override
@@ -88,7 +88,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		btnAddFantaStock = new JButton("√ﬂ∞°");
+		btnAddFantaStock = new JButton("Ï∂îÍ∞Ä");
 		btnAddFantaStock.setBounds(110, 50, 100, 20);
 		btnAddFantaStock.addActionListener(new ActionListener() {
 			@Override
@@ -98,7 +98,7 @@ public class AddStock extends JFrame {
 			}
 		});
 		
-		btnAddPocariSweatStock = new JButton("√ﬂ∞°");
+		btnAddPocariSweatStock = new JButton("Ï∂îÍ∞Ä");
 		btnAddPocariSweatStock.setBounds(110, 70, 100, 20);
 		btnAddPocariSweatStock.addActionListener(new ActionListener() {
 			@Override

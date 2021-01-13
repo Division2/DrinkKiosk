@@ -31,7 +31,7 @@ public class SubStock extends JFrame {
 		subStockPanel = new JPanel();
 		subStockPanel.setLayout(null);
 		
-		txtCiderStock = new JTextField("ªÁ¿Ã¥Ÿ");
+		txtCiderStock = new JTextField("ÏÇ¨Ïù¥Îã§");
 		txtCiderStock.setBounds(10, 10, 100, 20);
 		txtCiderStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -40,7 +40,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		txtCokeStock = new JTextField("ƒ›∂Û");
+		txtCokeStock = new JTextField("ÏΩúÎùº");
 		txtCokeStock.setBounds(10, 30, 100, 20);
 		txtCokeStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -49,7 +49,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		txtFantaStock = new JTextField("»Ø≈∏");
+		txtFantaStock = new JTextField("ÌôòÌÉÄ");
 		txtFantaStock.setBounds(10, 50, 100, 20);
 		txtFantaStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -58,7 +58,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		txtPocariSweatStock = new JTextField("∆˜ƒ´∏ÆΩ∫ø˛∆Æ");
+		txtPocariSweatStock = new JTextField("Ìè¨Ïπ¥Î¶¨Ïä§Ïõ®Ìä∏");
 		txtPocariSweatStock.setBounds(10, 70, 100, 20);
 		txtPocariSweatStock.addMouseListener(new MouseAdapter() {
 			@Override
@@ -67,7 +67,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		btnSubCiderStock = new JButton("ªË¡¶");
+		btnSubCiderStock = new JButton("ÏÇ≠Ï†ú");
 		btnSubCiderStock.setBounds(110, 10, 100, 20);
 		btnSubCiderStock.addActionListener(new ActionListener() {
 			@Override
@@ -77,7 +77,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		btnSubCokeStock = new JButton("ªË¡¶");
+		btnSubCokeStock = new JButton("ÏÇ≠Ï†ú");
 		btnSubCokeStock.setBounds(110, 30, 100, 20);
 		btnSubCokeStock.addActionListener(new ActionListener() {
 			@Override
@@ -87,7 +87,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		btnSubFantaStock = new JButton("ªË¡¶");
+		btnSubFantaStock = new JButton("ÏÇ≠Ï†ú");
 		btnSubFantaStock.setBounds(110, 50, 100, 20);
 		btnSubFantaStock.addActionListener(new ActionListener() {
 			@Override
@@ -97,7 +97,7 @@ public class SubStock extends JFrame {
 			}
 		});
 		
-		btnSubPocariSweatStock = new JButton("ªË¡¶");
+		btnSubPocariSweatStock = new JButton("ÏÇ≠Ï†ú");
 		btnSubPocariSweatStock.setBounds(110, 70, 100, 20);
 		btnSubPocariSweatStock.addActionListener(new ActionListener() {
 			@Override

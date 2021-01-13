@@ -56,7 +56,7 @@ public class KioskUser extends JFrame {
 		kioskPanel = new JPanel();
 		kioskPanel.setLayout(null);
 
-//		ÇöÀç ÇÁ·ÎÁ§Æ®ÀÇ À§Ä¡ ±¸ÇÏ±â
+//		í˜„ì¬ í”„ë¡œì íŠ¸ì˜ ìœ„ì¹˜ êµ¬í•˜ê¸°
 //		File path = new File("");
 //		System.out.println(path.getAbsolutePath());
 		
@@ -154,7 +154,7 @@ public class KioskUser extends JFrame {
 		inputCoin.addMouseListener(new MouseAdapter() {
 			@Override
             public void mouseClicked(MouseEvent e) {
-				userCoin = JOptionPane.showInputDialog("ÅõÀÔÇÒ ±İ¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä.\n¼ıÀÚ¸¸ ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù.");
+				userCoin = JOptionPane.showInputDialog("íˆ¬ì…í•  ê¸ˆì•¡ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.\nìˆ«ìë§Œ ì…ë ¥í•´ì•¼í•©ë‹ˆë‹¤.");
 
 				if (userCoin != null) {
 					coin += Integer.parseInt(userCoin);					
@@ -163,7 +163,7 @@ public class KioskUser extends JFrame {
             }
 		});
 		
-		lblCurrentAmount = new JLabel("ÇöÀç ÅõÀÔµÈ ±İ¾× : ");
+		lblCurrentAmount = new JLabel("í˜„ì¬ íˆ¬ì…ëœ ê¸ˆì•¡ : ");
 		lblCurrentAmount.setBounds(10, 220, 100, 50);
 		
 		txtCurrentAmount = new JTextField("0");
@@ -171,16 +171,16 @@ public class KioskUser extends JFrame {
 		txtCurrentAmount.setEditable(false);
 		txtCurrentAmount.setHorizontalAlignment(JTextField.CENTER);
 		
-		smallChange = new JButton("ÀÜµ·");
+		smallChange = new JButton("ì”ëˆ");
 		smallChange.setBounds(320, 220, 80, 50);
 		smallChange.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (0 == coin) {
-					JOptionPane.showMessageDialog(null, "¹İÈ¯ÇÒ ÀÜµ·ÀÌ ¾ø½À´Ï´Ù.", "Kiosk", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ë°˜í™˜í•  ì”ëˆì´ ì—†ìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.ERROR_MESSAGE);
 				}
 				else {
-					JOptionPane.showMessageDialog(null, "ÀÜµ· : " + coin + "ÀÔ´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì”ëˆ : " + coin + "ì…ë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 					coin = 0;
 					txtCurrentAmount.setText("0");
 				}
@@ -197,12 +197,12 @@ public class KioskUser extends JFrame {
 		adminShow.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				String password = JOptionPane.showInputDialog("°ü¸®ÀÚ ºñ¹Ğ¹øÈ£ ÀÔ·Â");
+				String password = JOptionPane.showInputDialog("ê´€ë¦¬ì ë¹„ë°€ë²ˆí˜¸ ì…ë ¥");
 				if (password != null && password.equals("1234")) {
 					new KioskAdmin(kdto);
 				}
 				else {
-					JOptionPane.showMessageDialog(null, "ºñ¹Ğ¹øÈ£°¡ Æ²·È°Å³ª ÀÔ·ÂµÇÁö ¾Ê¾Ò½À´Ï´Ù.", "Kiosk", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ê±°ë‚˜ ì…ë ¥ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});

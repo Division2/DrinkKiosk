@@ -37,10 +37,50 @@ public class KioskAdmin extends JFrame {
 		kioskAdminPanel.setLayout(null);
 		
 		menuBar = new JMenuBar();
-		menuManagement = new JMenu("°ü¸®");
+		menuManagement = new JMenu("ï¿½ï¿½ï¿½ï¿½");
+		menuBar.add(menuManagement);ã…package com.java.ex.drinkkiosk;
+
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+
+import com.java.ex.dao.KioskDAO;
+import com.java.ex.dto.KioskDTO;
+
+public class KioskAdmin extends JFrame {
+	
+	JPanel kioskAdminPanel;
+	
+	JMenuBar menuBar;
+	JMenu menuManagement;
+	JMenuItem itemAddStock;
+	JMenuItem itemSubStock;
+	JMenuItem itemEditPrice;
+	
+	JTable drinkKioskTable;
+	DefaultTableModel drinkModel;
+	JScrollPane scroll;
+	
+	public KioskAdmin(KioskDTO kdto) {
+		Container ct = getContentPane();
+		kioskAdminPanel = new JPanel();
+		kioskAdminPanel.setLayout(null);
+		
+		menuBar = new JMenuBar();
+		menuManagement = new JMenu("ê´€ë¦¬");
 		menuBar.add(menuManagement);
 		
-		itemAddStock = new JMenuItem("Àç°í µî·Ï");
+		itemAddStock = new JMenuItem("ì¬ê³  ë“±ë¡");
 		menuManagement.add(itemAddStock);
 		itemAddStock.addActionListener(new ActionListener() {
 			@Override
@@ -49,7 +89,7 @@ public class KioskAdmin extends JFrame {
 			}
 		});
 
-		itemSubStock = new JMenuItem("Àç°í »èÁ¦");
+		itemSubStock = new JMenuItem("ì¬ê³  ì‚­ì œ");
 		menuManagement.add(itemSubStock);
 		itemSubStock.addActionListener(new ActionListener() {
 			@Override
@@ -60,7 +100,7 @@ public class KioskAdmin extends JFrame {
 		
 		menuManagement.addSeparator();
 		
-		itemEditPrice = new JMenuItem("°¡°İ ¼öÁ¤");
+		itemEditPrice = new JMenuItem("ê°€ê²© ìˆ˜ì •");
 		menuManagement.add(itemEditPrice);
 		itemEditPrice.addActionListener(new ActionListener() {
 			@Override
@@ -69,7 +109,7 @@ public class KioskAdmin extends JFrame {
 			}
 		});
 		
-		String[] drinkLoopUp = {"»çÀÌ´Ù", "Äİ¶ó", "È¯Å¸", "Æ÷Ä«¸®½º¿şÆ®", "»çÀÌ´Ù °¡°İ", "Äİ¶ó °¡°İ", "È¯Å¸ °¡°İ"," Æ÷Ä«¸®½º¿şÆ® °¡°İ", "ÀÚÆÇ±â ±İ¾×" };
+		String[] drinkLoopUp = {"ì‚¬ì´ë‹¤", "ì½œë¼", "í™˜íƒ€", "í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸", "ì‚¬ì´ë‹¤ ê°€ê²©", "ì½œë¼ ê°€ê²©", "í™˜íƒ€ ê°€ê²©"," í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸ ê°€ê²©", "ìíŒê¸° ê¸ˆì•¡" };
 		drinkModel = new DefaultTableModel(drinkLoopUp, 0) {
 			@Override
 			public boolean isCellEditable(int row, int column) {
@@ -86,7 +126,86 @@ public class KioskAdmin extends JFrame {
 		
 		kioskAdminPanel.add(scroll);
 		
-		//¼± ±ß´Â ¸Ş¼Òµå
+		//ì„  ê¸‹ëŠ” ë©”ì†Œë“œ
+		//addSeparator();
+		
+		Thread tableList = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				KioskDAO kdao = new KioskDAO();
+				while (true) {
+					if (!kioskAdminPanel.isVisible()) {
+						break;
+					}
+					drinkKioskTable.setModel(kdao.drinkTableList());
+					try {
+						Thread.sleep(1000);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		});
+		tableList.start();
+		
+		ct.add(kioskAdminPanel);
+		
+		setJMenuBar(menuBar);
+		setTitle("Drink Kiosk Administator");
+		setVisible(true);
+		setSize(1035, 485);
+		setResizable(false);
+		setLocationRelativeTo(null);
+	}
+}
+		
+		itemAddStock = new JMenuItem("ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
+		menuManagement.add(itemAddStock);
+		itemAddStock.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new AddStock();
+			}
+		});
+
+		itemSubStock = new JMenuItem("ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		menuManagement.add(itemSubStock);
+		itemSubStock.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new SubStock();
+			}
+		});
+		
+		menuManagement.addSeparator();
+		
+		itemEditPrice = new JMenuItem("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		menuManagement.add(itemEditPrice);
+		itemEditPrice.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new EditPrice(kdto);
+			}
+		});
+		
+		String[] drinkLoopUp = {"ï¿½ï¿½ï¿½Ì´ï¿½", "ï¿½İ¶ï¿½", "È¯Å¸", "ï¿½ï¿½Ä«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®", "ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½", "ï¿½İ¶ï¿½ ï¿½ï¿½ï¿½ï¿½", "È¯Å¸ ï¿½ï¿½ï¿½ï¿½"," ï¿½ï¿½Ä«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½Ç±ï¿½ ï¿½İ¾ï¿½" };
+		drinkModel = new DefaultTableModel(drinkLoopUp, 0) {
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
+		
+		drinkKioskTable = new JTable(drinkModel);
+		drinkKioskTable.setRowHeight(25);
+		drinkKioskTable.getTableHeader().setReorderingAllowed(false);
+		scroll = new JScrollPane(drinkKioskTable);
+		scroll.setBounds(10, 10, 1000, 400);
+		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		
+		kioskAdminPanel.add(scroll);
+		
+		//ï¿½ï¿½ ï¿½ß´ï¿½ ï¿½Ş¼Òµï¿½
 		//addSeparator();
 		
 		Thread tableList = new Thread(new Runnable() {

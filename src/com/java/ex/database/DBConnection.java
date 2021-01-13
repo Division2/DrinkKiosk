@@ -18,7 +18,7 @@ public class DBConnection {
 			try {
 				Class.forName(DB_DRIVER);
 				dbConn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
-				System.out.println("DB, µå¶óÀÌ¹ö ·Îµå ¼º°ø");
+				System.out.println("DB, ë“œë¼ì´ë²„ ë¡œë“œ ì„±ê³µ");
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(null, e.getMessage());
 			}

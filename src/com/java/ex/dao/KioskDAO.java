@@ -105,7 +105,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "»çÀÌ´Ù Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì‚¬ì´ë‹¤ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 2) {
@@ -115,7 +115,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Äİ¶ó Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì½œë¼ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 3) {
@@ -125,7 +125,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "È¯Å¸ Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í™˜íƒ€ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 4) {
@@ -135,11 +135,11 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Æ÷Ä«¸®½º¿şÆ® Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.", "Admin", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”.", "Admin", JOptionPane.INFORMATION_MESSAGE);
 			} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -189,7 +189,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "»çÀÌ´Ù Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì‚¬ì´ë‹¤ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 2) {
@@ -199,7 +199,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Äİ¶ó Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì½œë¼ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 3) {
@@ -209,7 +209,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "È¯Å¸ Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í™˜íƒ€ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 4) {
@@ -219,11 +219,11 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Æ÷Ä«¸®½º¿şÆ® Àç°í°¡ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸ ì¬ê³ ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.", "Admin", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”.", "Admin", JOptionPane.INFORMATION_MESSAGE);
 			} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -242,7 +242,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "»çÀÌ´Ù °¡°İÀÌ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì‚¬ì´ë‹¤ ê°€ê²©ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 2) {
@@ -252,7 +252,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Äİ¶ó °¡°İÀÌ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "ì½œë¼ ê°€ê²©ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 3) {
@@ -262,7 +262,7 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "È¯Å¸ °¡°İÀÌ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í™˜íƒ€ ê°€ê²©ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			else if (type == 4) {
@@ -272,11 +272,11 @@ public class KioskDAO {
 				
 				int result = pstmt.executeUpdate();
 				if (1 == result) {
-					JOptionPane.showMessageDialog(null, "Æ÷Ä«¸®½º¿şÆ® °¡°İÀÌ º¯°æµÇ¾ú½À´Ï´Ù.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸ ê°€ê²©ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.", "Admin", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”.", "Admin", JOptionPane.INFORMATION_MESSAGE);
 			} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -285,7 +285,7 @@ public class KioskDAO {
 	public DefaultTableModel drinkTableList() {
 		dbConn = DBConnection.getInstance();
 		
-		String[] drinkLoopUp = {"»çÀÌ´Ù", "Äİ¶ó", "È¯Å¸", "Æ÷Ä«¸®½º¿şÆ®", "»çÀÌ´Ù °¡°İ", "Äİ¶ó °¡°İ", "È¯Å¸ °¡°İ"," Æ÷Ä«¸®½º¿şÆ® °¡°İ", "ÀÚÆÇ±â ±İ¾×" };
+		String[] drinkLoopUp = {"ì‚¬ì´ë‹¤", "ì½œë¼", "í™˜íƒ€", "í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸", "ì‚¬ì´ë‹¤ ê°€ê²©", "ì½œë¼ ê°€ê²©", "í™˜íƒ€ ê°€ê²©"," í¬ì¹´ë¦¬ìŠ¤ì›¨íŠ¸ ê°€ê²©", "ìíŒê¸° ê¸ˆì•¡" };
 		DefaultTableModel drinkModel = new DefaultTableModel(drinkLoopUp, 0) {
 			@Override
 			public boolean isCellEditable(int row, int column) {

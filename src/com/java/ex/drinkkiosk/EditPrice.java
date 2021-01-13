@@ -32,7 +32,7 @@ public class EditPrice extends JFrame {
 		pricePanel = new JPanel();
 		pricePanel.setLayout(null);
 		
-		txtCiderPrice = new JTextField("ªÁ¿Ã¥Ÿ ∞°∞› : " + kdto.getCiderPrice());
+		txtCiderPrice = new JTextField("ÏÇ¨Ïù¥Îã§ Í∞ÄÍ≤© : " + kdto.getCiderPrice());
 		txtCiderPrice.setBounds(10, 10, 100, 20);
 		txtCiderPrice.addMouseListener(new MouseAdapter() {
 			@Override
@@ -41,7 +41,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		txtCokePrice = new JTextField("ƒ›∂Û ∞°∞› : " + kdto.getCokePrice());
+		txtCokePrice = new JTextField("ÏΩúÎùº Í∞ÄÍ≤© : " + kdto.getCokePrice());
 		txtCokePrice.setBounds(10, 30, 100, 20);
 		txtCokePrice.addMouseListener(new MouseAdapter() {
 			@Override
@@ -50,7 +50,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		txtFantaPrice = new JTextField("»Ø≈∏ ∞°∞› : " + kdto.getFantaPrice());
+		txtFantaPrice = new JTextField("ÌôòÌÉÄ Í∞ÄÍ≤© : " + kdto.getFantaPrice());
 		txtFantaPrice.setBounds(10, 50, 100, 20);
 		txtFantaPrice.addMouseListener(new MouseAdapter() {
 			@Override
@@ -59,7 +59,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		txtPocariSweatPrice = new JTextField("∆˜ƒ´∏ÆΩ∫ø˛∆Æ ∞°∞› : " + kdto.getPocariPrice());
+		txtPocariSweatPrice = new JTextField("Ìè¨Ïπ¥Î¶¨Ïä§Ïõ®Ìä∏ Í∞ÄÍ≤© : " + kdto.getPocariPrice());
 		txtPocariSweatPrice.setBounds(10, 70, 100, 20);
 		txtPocariSweatPrice.addMouseListener(new MouseAdapter() {
 			@Override
@@ -68,7 +68,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		btnEditCiderPrice = new JButton("ºˆ¡§");
+		btnEditCiderPrice = new JButton("ÏàòÏ†ï");
 		btnEditCiderPrice.setBounds(110, 10, 100, 20);
 		btnEditCiderPrice.addActionListener(new ActionListener() {
 			@Override
@@ -78,7 +78,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		btnEditCokePrice = new JButton("ºˆ¡§");
+		btnEditCokePrice = new JButton("ÏàòÏ†ï");
 		btnEditCokePrice.setBounds(110, 30, 100, 20);
 		btnEditCokePrice.addActionListener(new ActionListener() {
 			@Override
@@ -88,7 +88,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		btnEditFantaPrice = new JButton("ºˆ¡§");
+		btnEditFantaPrice = new JButton("ÏàòÏ†ï");
 		btnEditFantaPrice.setBounds(110, 50, 100, 20);
 		btnEditFantaPrice.addActionListener(new ActionListener() {
 			@Override
@@ -98,7 +98,7 @@ public class EditPrice extends JFrame {
 			}
 		});
 		
-		btnEditPocariSweatPrice = new JButton("ºˆ¡§");
+		btnEditPocariSweatPrice = new JButton("ÏàòÏ†ï");
 		btnEditPocariSweatPrice.setBounds(110, 70, 100, 20);
 		btnEditPocariSweatPrice.addActionListener(new ActionListener() {
 			@Override
