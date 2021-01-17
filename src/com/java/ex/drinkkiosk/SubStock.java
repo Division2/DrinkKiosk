@@ -134,7 +134,7 @@ public class SubStock extends JFrame {
 		ct.add(subStockPanel);
 		
 		setVisible(true);
-		setTitle("Stock Subtract");
+		setTitle("Subtract");
 		setSize(290, 140);
 		setResizable(false);
 		setLocationRelativeTo(null);
