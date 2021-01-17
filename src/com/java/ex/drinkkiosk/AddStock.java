@@ -134,7 +134,7 @@ public class AddStock extends JFrame {
 		ct.add(addStockPanel);
 		
 		setVisible(true);
-		setTitle("Add");
+		setTitle("Stock Add");
 		setSize(290, 140);
 		setResizable(false);
 		setLocationRelativeTo(null);
