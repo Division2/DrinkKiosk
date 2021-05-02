@@ -199,7 +199,7 @@ public class KioskUser extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				String password = JOptionPane.showInputDialog("관리자 비밀번호 입력");
 				if (password != null && password.equals("1234")) {
-					new KioskAdmin(kdto);
+					 new KioskAdmin(kdto);
 				}
 				else {
 					JOptionPane.showMessageDialog(null, "비밀번호가 틀렸거나 입력되지 않았습니다.", "Kiosk", JOptionPane.ERROR_MESSAGE);

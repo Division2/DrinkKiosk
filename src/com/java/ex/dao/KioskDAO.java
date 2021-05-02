@@ -3,6 +3,7 @@ package com.java.ex.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.NoSuchElementException;
 
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -138,6 +139,8 @@ public class KioskDAO {
 					JOptionPane.showMessageDialog(null, "포카리스웨트 재고가 변경되었습니다.", "Kiosk", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
+			} catch (NoSuchElementException e) {
+				System.out.println("zz");
 			} catch (NumberFormatException e) {
 				JOptionPane.showMessageDialog(null, "숫자만 입력하세요.", "Admin", JOptionPane.INFORMATION_MESSAGE);
 			} catch (Exception e) {
